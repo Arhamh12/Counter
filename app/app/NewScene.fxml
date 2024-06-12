@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="381.0" prefWidth="622.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.MainSceneController">
+   <children>
+      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Button alignment="CENTER" layoutX="536.0" layoutY="24.0" mnemonicParsing="false" onAction="#onCalc" prefHeight="25.0" prefWidth="75.0" text="Calc">
+               <font>
+                  <Font name="HoloLens MDL2 Assets" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Blend />
+               </effect>
+            </Button>
+            <Button layoutX="47.0" layoutY="15.0" minWidth="34.0" mnemonicParsing="false" onAction="#onTimer" prefHeight="38.0" prefWidth="91.0" text="Timer" />
+            <Button layoutX="368.0" layoutY="23.0" mnemonicParsing="false" onAction="#onMain" prefHeight="27.0" prefWidth="75.0" text="Random">
+               <font>
+                  <Font name="HoloLens MDL2 Assets" size="12.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" layoutX="451.0" layoutY="23.0" mnemonicParsing="false" onAction="#onCheckList" prefHeight="27.0" prefWidth="75.0" text="Checklist">
+               <font>
+                  <Font name="HoloLens MDL2 Assets" size="13.0" />
+               </font>
+            </Button>
+            <TextField fx:id="tfTime" layoutX="40.0" layoutY="92.0" prefHeight="25.0" prefWidth="234.0" promptText="Insert your time in Minutes.(Max 99.Mins)" />
+            <Button fx:id="startBtn" defaultButton="true" layoutX="138.0" layoutY="130.0" mnemonicParsing="false" onAction="#TimerStart" prefHeight="39.0" prefWidth="75.0" text="Start">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Button>
+            <Button layoutX="217.0" layoutY="129.0" mnemonicParsing="false" onAction="#TimerStop" prefHeight="25.0" prefWidth="64.0" style="-fx-background-color: Red;" text="Stop" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Button>
+            <Label fx:id="Timer" layoutX="40.0" layoutY="174.0" prefHeight="121.0" prefWidth="219.0" text="00:00:00">
+               <font>
+                  <Font name="Roboto" size="50.0" />
+               </font>
+            </Label>
+            <ListView layoutX="368.0" layoutY="91.0" prefHeight="235.0" prefWidth="212.0" style="-fx-background-color: #000000;" />
+            <Button layoutX="380.0" layoutY="104.0" mnemonicParsing="false" onAction="#mins5" prefHeight="25.0" prefWidth="188.0" text="5 Minutes" />
+            <Button layoutX="380.0" layoutY="215.0" mnemonicParsing="false" onAction="#mins30" prefHeight="25.0" prefWidth="188.0" text="30 Minutes" />
+            <Button layoutX="380.0" layoutY="178.0" mnemonicParsing="false" onAction="#mins15" prefHeight="25.0" prefWidth="188.0" text="15 Minutes" />
+            <Button layoutX="380.0" layoutY="142.0" mnemonicParsing="false" onAction="#mins10" prefHeight="25.0" prefWidth="188.0" text="10 Minutes" />
+            <Button layoutX="380.0" layoutY="254.0" mnemonicParsing="false" onAction="#mins1H" prefHeight="25.0" prefWidth="188.0" text="1 Hour" />
+            <Button layoutX="380.0" layoutY="289.0" mnemonicParsing="false" onAction="#DeepWork" prefHeight="25.0" prefWidth="188.0" text="Deep Work" />
+            <Button defaultButton="true" layoutX="279.0" layoutY="92.0" mnemonicParsing="false" onAction="#TfTimerConfirm" prefHeight="25.0" prefWidth="64.0" text="Confirm" />
+            <Label fx:id="Timeover" layoutX="28.0" layoutY="271.0" prefHeight="87.0" prefWidth="315.0" textFill="RED">
+               <font>
+                  <Font name="Segoe UI" size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

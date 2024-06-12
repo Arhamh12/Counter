@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.MainSceneController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefWidth="696.0" VBox.vgrow="ALWAYS">
+      <children>
+          <Button alignment="CENTER" layoutX="536.0" layoutY="24.0" mnemonicParsing="false" onAction="#onCalc" prefHeight="27.0" prefWidth="75.0" text="Calc">
+               <font>
+                  <Font name="HoloLens MDL2 Assets" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Blend />
+               </effect>
+            </Button>
+          <Button layoutX="47.0" layoutY="15.0" minWidth="34.0" mnemonicParsing="false" onAction="#onRandomFacts" prefHeight="38.0" prefWidth="117.0" text="Random Fact" wrapText="true" />
+          <Button layoutX="368.0" layoutY="23.0" mnemonicParsing="false" onAction="#openCheckList" prefHeight="27.0" prefWidth="75.0" text="Checklist">
+               <font>
+                  <Font name="HoloLens MDL2 Assets" size="12.0" />
+               </font>
+            </Button>
+          <Button alignment="CENTER" layoutX="451.0" layoutY="23.0" mnemonicParsing="false" onAction="#onTimer" prefHeight="27.0" prefWidth="75.0" text="Timer">
+               <font>
+                  <Font name="HoloLens MDL2 Assets" size="13.0" />
+               </font>
+            </Button>
+            <Label id="Bfacts" fx:id="Bfacts" layoutX="53.0" layoutY="145.0" prefHeight="47.0" prefWidth="468.0" text="A 73-year-old bottle of French Burgundy became the most expensive bottle of wine ever sold at auction in 2018, going for $558,000 (approx £439,300)" wrapText="true">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label id="Sfact" fx:id="Sfacts" layoutX="144.0" layoutY="192.0" prefHeight="91.0" prefWidth="353.0" text=" Between 1912 and 1948, the international sporting events awarded medals for music, painting, sculpture and architecture, Shame it didn't catch on, the famous pottery scene in Ghost could have won an Olympic medal as well as an Academy Award for the best screenplay" wrapText="true">
+               <font>
+                  <Font name="Segoe UI Emoji" size="12.0" />
+               </font>
+            </Label>
+            <Button layoutX="342.0" layoutY="336.0" mnemonicParsing="false" onAction="#onBack" text="Previous" />
+            <Button defaultButton="true" layoutX="410.0" layoutY="336.0" mnemonicParsing="false" onAction="#onRandomFacts" prefHeight="30.0" prefWidth="75.0" text="Next" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

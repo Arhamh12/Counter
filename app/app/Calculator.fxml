@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="381.0" prefWidth="622.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.MainSceneController">
+   <children>
+      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <ListView layoutX="131.0" layoutY="98.0" prefHeight="239.0" prefWidth="310.0" style="-fx-background-color: black;" />
+            <Button alignment="CENTER" layoutX="536.0" layoutY="24.0" mnemonicParsing="false" onAction="#onCalc" prefHeight="25.0" prefWidth="75.0" text="Timer">
+               <font>
+                  <Font name="HoloLens MDL2 Assets" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Blend />
+               </effect>
+            </Button>
+            <Button layoutX="47.0" layoutY="15.0" minWidth="34.0" mnemonicParsing="false" onAction="#onTimer" prefHeight="38.0" prefWidth="91.0" text="Calculater" />
+            <Button layoutX="368.0" layoutY="23.0" mnemonicParsing="false" onAction="#onMain" prefHeight="27.0" prefWidth="75.0" text="Random">
+               <font>
+                  <Font name="HoloLens MDL2 Assets" size="12.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" layoutX="451.0" layoutY="23.0" mnemonicParsing="false" onAction="#onCheckList" prefHeight="27.0" prefWidth="75.0" text="Checklist">
+               <font>
+                  <Font name="HoloLens MDL2 Assets" size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="144.0" layoutY="197.0" mnemonicParsing="false" onAction="#Calc7" prefHeight="25.0" prefWidth="40.0" text="7" />
+            <Button layoutX="188.0" layoutY="197.0" mnemonicParsing="false" onAction="#Calc8" prefHeight="25.0" prefWidth="40.0" text="8" />
+            <Button layoutX="234.0" layoutY="198.0" mnemonicParsing="false" onAction="#Calc9" prefHeight="25.0" prefWidth="40.0" text="9" />
+            <Button layoutX="144.0" layoutY="228.0" mnemonicParsing="false" onAction="#Calc4" prefHeight="25.0" prefWidth="40.0" text="4" />
+            <Button layoutX="188.0" layoutY="228.0" mnemonicParsing="false" onAction="#Calc5" prefHeight="25.0" prefWidth="40.0" text="5" />
+            <Button layoutX="234.0" layoutY="228.0" mnemonicParsing="false" onAction="#Calc6" prefHeight="25.0" prefWidth="40.0" text="6" />
+            <Button layoutX="144.0" layoutY="259.0" mnemonicParsing="false" onAction="#Calc1" prefHeight="25.0" prefWidth="40.0" text="1" />
+            <Button layoutX="188.0" layoutY="259.0" mnemonicParsing="false" onAction="#Calc2" prefHeight="25.0" prefWidth="40.0" text="2" />
+            <Button layoutX="234.0" layoutY="259.0" mnemonicParsing="false" onAction="#Calc3" prefHeight="25.0" prefWidth="40.0" text="3" />
+            <Button layoutX="145.0" layoutY="166.0" mnemonicParsing="false" onAction="#CalcAC" prefHeight="25.0" prefWidth="84.0" text="AC" />
+            <Button layoutX="234.0" layoutY="165.0" mnemonicParsing="false" onAction="#CalcBack" prefHeight="27.0" prefWidth="40.0" text="←" />
+            <Button layoutX="278.0" layoutY="197.0" mnemonicParsing="false" onAction="#CalcTiimes" prefHeight="25.0" prefWidth="40.0" text="X" />
+            <Button layoutX="278.0" layoutY="259.0" mnemonicParsing="false" onAction="#CalcMinus" prefHeight="25.0" prefWidth="40.0" text="-" />
+            <Button layoutX="278.0" layoutY="228.0" mnemonicParsing="false" onAction="#CalcPlus" prefHeight="25.0" prefWidth="40.0" text="+" />
+            <Button layoutX="278.0" layoutY="166.0" mnemonicParsing="false" onAction="#CalcDivide" prefHeight="25.0" prefWidth="40.0" text="÷" />
+            <Label fx:id="mainCalc" layoutX="138.0" layoutY="105.0" prefHeight="53.0" prefWidth="186.0" style="-fx-background-color: #616161;" text="999999X999999" textFill="#fcfcfc">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <ListView editable="true" layoutX="331.0" layoutY="109.0" prefHeight="216.0" prefWidth="104.0" />
+            <Button layoutX="145.0" layoutY="291.0" mnemonicParsing="false" onAction="#Calc0" prefHeight="25.0" prefWidth="84.0" text="0" />
+            <Button layoutX="234.0" layoutY="291.0" mnemonicParsing="false" onAction="#CalcDot" prefHeight="25.0" prefWidth="40.0" text="." />
+            <Button layoutX="278.0" layoutY="291.0" mnemonicParsing="false" onAction="#CalcEqual" prefHeight="25.0" prefWidth="40.0" text="=" />
+            <Label layoutX="331.0" layoutY="197.0" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: black;" text="Label" />
+            <Label layoutX="331.0" layoutY="133.0" prefHeight="27.0" prefWidth="104.0" style="-fx-background-color: Black;" text="Label" />
+            <Label layoutX="331.0" layoutY="228.0" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: Black;" text="Label" />
+            <Label layoutX="331.0" layoutY="259.0" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: Black;" text="Label" />
+            <Label layoutX="331.0" layoutY="166.0" prefHeight="27.0" prefWidth="104.0" style="-fx-background-color: Black;" text="Label" />
+            <Label layoutX="331.0" layoutY="291.0" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: Black;" text="Label" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
